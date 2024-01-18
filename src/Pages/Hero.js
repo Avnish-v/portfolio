@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='relative'>
         <img src={Icons.Hero} /> 
         <div className='absolute top-[30%] left-[66%] '>
-        <div className='p-2 border-[6px] border-black rounded-full'><img src={Icons.programmer} className='rounded-full ' width={200} height={200}/></div>
+        <div className='p-2 border-[6px] border-black rounded-full '><img src={Icons.programmer} className='rounded-full ' width={200} height={200}/></div>
     </div>
     </div>
 

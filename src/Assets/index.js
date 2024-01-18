@@ -10,6 +10,8 @@ export const Icons = {
     "js" :  require("./res/js.png"),
     "tailwind" :  require("./res/tailwind.png"),
     "ts" :  require("./res/ts.png"), 
-    "css" :require("./res/css.png")
+    "css" :require("./res/css.png"),
+    "blockApp" : require("./res/blockapp.png"),
+    "back" : require("./res/back.png"),
 
 }
