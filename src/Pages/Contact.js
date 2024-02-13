@@ -7,8 +7,8 @@ const Contact = () => {
     <h1 className='text-4xl font-semibold '>Cont<span className='under'>act</span></h1>
     </div>
 <div className='flex justify-center '>
-<form action="https://getform.io/f/7f90499c-27d8-416c-a92a-6d05934f3b9d" className='border rounded-lg p-10' method="POST">
-    <div className='flex flex-col gap-5'>
+<form action="https://getform.io/f/7f90499c-27d8-416c-a92a-6d05934f3b9d" className=' w-[90%] md:w-[500px] border rounded-lg p-10' method="POST">
+    <div className='flex flex-col  gap-5'>
  <div className='flex flex-col'>
     <label>Name</label>
     <input type="text" name="name" placeholder='Name' className='md:w-[400px] rounded-md h-9 border border-gray-600 ' />

@@ -17,5 +17,6 @@ export const Icons = {
     "BlockDream" :  require("./res/blockDream.png"),
     "Mo" :require("./res/mo_logo.png"),
     "Kpmg" : require("./res/Kpmg.png"),
-
+    "Close" :  require("./res/close.png"),
+    "ham" : require("./res/hamburger.png"),
 }
