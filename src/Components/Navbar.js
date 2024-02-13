@@ -6,7 +6,7 @@ const Navbar = () => {
   const { setMode, mode } = useContextData();
   return (
     <div className=" sticky flex justify-around  items-center py-5 bg-[#F3F5FA03] border-b ">
-      <img src={Icons.Logo} alt="logo" width={40} height={30} />
+      <img src={Icons.Logo} alt="logo" width={40} height={30} className="rounded-[20%]" style={{background : mode ? "#786D94" : ""} } />
       <div className="flex items-center gap-20">
         <ul className={`flex gap-10 list-none cursor-pointer ${mode?'text-white' :'text-black'} text-base font-semibold `}>
           <li className="hover:text-blue-800">About</li>
