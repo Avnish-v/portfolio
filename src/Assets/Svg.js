@@ -1,9 +1,9 @@
-export const Moon = ({ mode }) => {
+export const Moon = ({ mode,  dimesion }) => {
   return (
     <svg
       style={{ transform: "rotate(250deg)" }}
-      width="30px"
-      height="30px"
+      width={dimesion}
+      height={dimesion}
       enableBackground="new 0 0 32 32"
       viewBox="0 0 32 32"
       id="moon"
