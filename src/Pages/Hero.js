@@ -10,7 +10,7 @@ const Hero = () => {
           src={Icons.Hero}
           style={{ filter: mode ? "contrast(0.2)" : "" }}
           alt="hero"
-          className="!max-w-[80vw] !md:w-full"
+          className="md:w-full"
         />
         <div className="absolute top-[14%] md:top-[20%] lg:top-[30%] left-[66%] ">
           <div className="p-2   rounded-full ">
