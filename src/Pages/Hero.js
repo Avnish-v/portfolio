@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="flex flex-col lg:justify-center   px-5 ">
         <div className="flex gap-x-5">
           <h1 className={`text-6xl font-bold   `}>HII,</h1>
-          <div className="w-[200px] my-10">
+          <div className="md:w-[200px] my-10">
             <h2 className={`text-base `}>
               Welcome to my corner of the internet! I'm Avnish, a frontend
               developer with a keen eye for design and a love for crafting
