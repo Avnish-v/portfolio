@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const { setMode, mode } = useContextData();
   return (
-    <div className=" sticky flex justify-around  items-center py-5  border-b ">
+    <div className=" sticky hidden md:flex justify-around  items-center py-5  border-b ">
       <Link to="About" smooth={true} duration={100}>
         <img
           src={Icons.Logo}
@@ -19,7 +19,7 @@ const Navbar = () => {
       </Link>
       <div className="flex items-center gap-20">
         <ul
-          className={`flex gap-10 list-none cursor-pointer ${
+          className={`flex md:gap-5 lg:gap-10 list-none cursor-pointer ${
             mode ? "text-white" : "text-black"
           } text-base font-semibold `}
         >
