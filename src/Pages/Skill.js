@@ -22,7 +22,7 @@ const Skill = () => {
     }
 ]
   return (
-    <div className='px-20 ' id="Skills">
+    <div className='px-5 md:px-20 ' id="Skills">
 <h1 className='text-4xl font-semibold '> Ski<span className='under'>ll's</span></h1>
 <div className='my-10 flex justify-evenly '>
     {skill.map((element , index)=>{
@@ -38,7 +38,7 @@ const Skill = () => {
     })}
 </div>
 
-<div className='flex gap-2 mb-5'>
+<div className='flex flex-col md:flex-row gap-2 mb-5'>
     <h2 className='text-base  font-semibold'>Other skill's -:</h2>
     <p className='text-base font-medium'>  Next Js<b>|</b>  Redux  <b>|</b> Git & Github <b>|</b> React-Router <b>|</b>Headless UI<b>|</b>Rechart<b>|</b>Html <b>|</b>DSA <b>|</b>C & C++ </p>
 </div>

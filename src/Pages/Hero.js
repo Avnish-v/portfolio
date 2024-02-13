@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex  md:justify-center md:mt-0 ">
-          <p className={`w-[400px]  `}>
+          <p className={`md:w-[400px]  `}>
             I'm not just a coder; I'm a storyteller in the digital realm. I find
             joy in turning complex ideas into elegant, intuitive, and
             pixel-perfect websites. My journey in the world of frontend
