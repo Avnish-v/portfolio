@@ -20,7 +20,7 @@ const Contact = () => {
  <div className='flex flex-col'>
 
     <label>Message</label>
-    <textarea type="text" name="message" placeholder='Additional information' className='w-[400px] rounded-md h-[150px] border border-gray-600 '  />
+    <textarea type="text" name="message"  placeholder='Additional information' className='w-[400px] resize-none rounded-md h-[150px] border border-gray-600 '  />
  </div>
  <div className='flex justify-center'>
     <button className='w-[200px] h-11 rounded-md bg-[#5724E7] text-white font-semibold' type="submit">Send</button>
