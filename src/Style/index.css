@@ -17,3 +17,9 @@
   height: 100%;
   
 }
+
+.background{
+  background-image: url("../Assets/res/back.png");
+  background-position: top  bottom ;
+ object-fit: cover;
+}
