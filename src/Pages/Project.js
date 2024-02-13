@@ -22,7 +22,7 @@ const Project = () => {
     }
   ]
   return (
-    <div className='px-20 my-10  background ' id="Project">
+    <div className=' px-5 md:px-20 my-10  background ' id="Project">
     <h1 className='text-4xl font-semibold '> Pro<span className='under'>ject's</span></h1>
 <div className='mt-20 grid grid-flow-row  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 rounded-xl drop-shadow-cardbox  p-5'>
  {project.map((element ,index)=>{
