@@ -35,7 +35,7 @@ const Hero = () => {
             </h2>
           </div>
         </div>
-        <div className="flex justify-end md:justify-center md:mt-0 mt-40">
+        <div className="flex justify-end md:justify-center md:mt-0 ">
           <p className={`w-[400px]  `}>
             I'm not just a coder; I'm a storyteller in the digital realm. I find
             joy in turning complex ideas into elegant, intuitive, and
