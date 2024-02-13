@@ -23,3 +23,7 @@
   background-position: top  bottom ;
  object-fit: cover;
 }
+
+*{
+  scroll-behavior: smooth;
+}

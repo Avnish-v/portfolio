@@ -10,7 +10,7 @@ import { useContextData } from '../../Provider/Mode'
 const App = () => {
   const {mode} =useContextData();
   return (
-  <div style={{ backgroundColor: mode ? "black" : "white" }}>
+  <div style={{ backgroundColor: mode ? "#121212" : "white" , color : mode ? "white" : "black" }}>
     <Navbar/>
     <Hero/>
     <Skill/>
