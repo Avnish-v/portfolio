@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const { setMode, mode } = useContextData();
   return (
-    <div className=" sticky hidden md:flex justify-around  items-center py-5  border-b ">
+    <div className=" sticky px-6 md:px-0 flex  justify-between md:justify-around  items-center py-3 md:py-5  border-b ">
       <Link to="About" smooth={true} duration={100}>
         <img
           src={Icons.Logo}
@@ -17,7 +17,19 @@ const Navbar = () => {
           style={{ background: mode ? "#786D94" : "" }}
         />
       </Link>
-      <div className="flex items-center gap-20">
+      <div className="flex md:hidden gap-5">
+      <div
+            onClick={() => {
+              setMode((prev) => !prev);
+            }}
+          >
+            <Moon mode={mode} dimesion={20}  />
+          </div>
+      <img src={Icons.ham} width={20} height={20} style={{filter : mode && "contrast(0.2)"}}/>
+      </div>
+      
+     
+      <div className=" hidden md:flex items-center gap-20">
         <ul
           className={`flex md:gap-5 lg:gap-10 list-none cursor-pointer ${
             mode ? "text-white" : "text-black"
@@ -56,7 +68,7 @@ const Navbar = () => {
               setMode((prev) => !prev);
             }}
           >
-            <Moon mode={mode} />
+            <Moon mode={mode} dimesion={30} />
           </div>
         </ul>
         <div
