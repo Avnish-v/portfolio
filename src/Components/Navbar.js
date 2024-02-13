@@ -25,7 +25,7 @@ const Navbar = () => {
           >
             <Moon mode={mode} dimesion={20}  />
           </div>
-      <img src={Icons.ham} width={20} height={20} style={{filter : mode && "contrast(0.2)"}}/>
+      <img src={Icons.ham} width={20} height={20} alt="ham" style={{filter : mode && "contrast(0.2)"}}/>
       </div>
       
      
