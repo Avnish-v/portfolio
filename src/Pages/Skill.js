@@ -22,7 +22,7 @@ const Skill = () => {
     }
 ]
   return (
-    <div className='px-20'>
+    <div className='px-20 ' id="Skills">
 <h1 className='text-4xl font-semibold '> Ski<span className='under'>ll's</span></h1>
 <div className='my-10 flex justify-evenly '>
     {skill.map((element , index)=>{

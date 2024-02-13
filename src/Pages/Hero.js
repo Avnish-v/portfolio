@@ -4,15 +4,13 @@ import { useContextData } from '../Provider/Mode'
 const Hero = () => {
   const mode  =  useContextData();
   return (
-<div className='flex '>
+<div className='flex ' id="About">
     <div className='relative'>
         <img src={Icons.Hero} style={{filter : mode ? "contrast(0.2)" :""}} alt='hero' /> 
         <div className='absolute top-[30%] left-[66%] '>
-        <div className='p-2   rounded-full '><img src={Icons.programmer} className='rounded-full '  width={200} height={200}/></div>
+        <div className='p-2   rounded-full '><img src={Icons.programmer} className='rounded-full ' alt='programmer' width={200} height={200}/></div>
     </div>
     </div>
-
-    {/* //! second section */}
     <div className='flex flex-col justify-center  h-screen px-5 '>
         <div className='flex gap-x-5'>
         <h1 className={`text-6xl font-bold   `}>HII,</h1>
@@ -25,9 +23,14 @@ const Hero = () => {
         </div>
         <div className='flex gap-10 justify-center my-5'>
      
-            <img src={Icons.linkedin} alt="logo" className='w-10 h-10 hover:w-12 hover:h-12  transition hover:delay-300'/>
-            <img src={Icons.git} alt="logo" className={`w-10 h-10 hover:w-12 hover:h-12  hover:delay-300  rounded-[50%]`} style={{background : mode ? "white" : ""}}/>
-            <img src={Icons.mail} alt="logo" className='w-10 h-10  hover:w-12 hover:h-12  hover:delay-300'/>
+            <a href='https://www.linkedin.com/in/
+avnish-tiwari-b3365a279
+' target="__blank" > <img src={Icons.linkedin} alt="logo" className='w-10 h-10 hover:w-12 hover:h-12  transition hover:delay-300'/></a>
+       
+      <a href="https://github.com/Avnish-v" target="__blank">
+           <img src={Icons.git} alt="logo" className={`w-10 h-10 hover:w-12 hover:h-12  hover:delay-300  rounded-[50%]`} style={{background : mode ? "white" : ""}}/>  </a>
+        
+           <a href="mailto:tiwariavnish40@gmail.com" target="__blank"> <img src={Icons.mail} alt="logo" className='w-10 h-10  hover:w-12 hover:h-12  hover:delay-300'/></a>
     </div>
     </div>
     

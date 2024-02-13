@@ -13,5 +13,6 @@ export const Icons = {
     "css" :require("./res/css.png"),
     "blockApp" : require("./res/blockapp.png"),
     "back" : require("./res/back.png"),
+    "Pdf" : require("./res/abc.pdf")
 
 }

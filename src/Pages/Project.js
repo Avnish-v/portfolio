@@ -3,7 +3,7 @@ import { Icons } from '../Assets'
 
 const Project = () => {
   return (
-    <div className='px-20 my-10  background '>
+    <div className='px-20 my-10  background ' id="Project">
     <h1 className='text-4xl font-semibold '> Pro<span className='under'>ject's</span></h1>
 <div className='mt-20 grid grid-flow-row grid-cols-3 gap-5 rounded-xl drop-shadow-cardbox p-5'>
  {[1,2,4,5,6].map((element ,index)=>{
