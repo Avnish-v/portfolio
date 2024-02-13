@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:justify-center  h-screen px-5 ">
+      <div className="flex flex-col lg:justify-center   px-5 ">
         <div className="flex gap-x-5">
           <h1 className={`text-6xl font-bold   `}>HII,</h1>
           <div className="w-[200px] my-10">
