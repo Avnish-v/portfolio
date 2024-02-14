@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Icons } from "../Assets";
 import { useContextData } from "../Provider/Mode";
 import { Moon } from "../Assets/Svg";
@@ -8,6 +8,16 @@ const Navbar = () => {
   const { setMode, mode } = useContextData();
   const [hamMenu , setHamMenu] = useState(false);
 
+  useEffect(() => {
+    if (hamMenu) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [hamMenu]);
   const ToggleMenu =()=>{
     setHamMenu(prev=>!prev);
   }
