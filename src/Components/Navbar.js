@@ -11,9 +11,12 @@ const Navbar = () => {
   const ToggleMenu =()=>{
     setHamMenu(prev=>!prev);
   }
+  const close  =()=>{
+    setHamMenu(false)
+  }
   return (
-    <>
-{hamMenu && <Menu ham={hamMenu}/>}
+    <>  
+{hamMenu && < div className="overflow-hidden"><Menu close={close}  /></div>}
     <div className=" sticky px-6 md:px-0 flex  justify-between md:justify-around  items-center py-3 md:py-5  border-b ">
       <Link to="About" smooth={true} duration={100}>
         <img
