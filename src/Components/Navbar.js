@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Icons } from "../Assets";
 import { useContextData } from "../Provider/Mode";
 import { Moon } from "../Assets/Svg";
 import { Link } from "react-scroll";
+import Menu from "./Menu";
 const Navbar = () => {
   const { setMode, mode } = useContextData();
+  const [hamMenu , setHamMenu] = useState(false);
+
+  const ToggleMenu =()=>{
+    setHamMenu(prev=>!prev);
+  }
   return (
+    <>
+{hamMenu && <Menu/>}
     <div className=" sticky px-6 md:px-0 flex  justify-between md:justify-around  items-center py-3 md:py-5  border-b ">
       <Link to="About" smooth={true} duration={100}>
         <img
@@ -25,7 +33,7 @@ const Navbar = () => {
           >
             <Moon mode={mode} dimesion={20}  />
           </div>
-      <img src={Icons.ham} width={20} height={20} alt="ham" style={{filter : mode && "contrast(0.2)"}}/>
+      <img src={Icons.ham} width={20} height={20} alt="ham" onClick={ToggleMenu} className="cursor-pointer" style={{filter : mode && "contrast(0.2)"}}/>
       </div>
       
      
@@ -81,6 +89,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
