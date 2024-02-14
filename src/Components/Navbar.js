@@ -31,7 +31,7 @@ const Navbar = () => {
           <Menu close={close} />
         </div>
       )}
-      <div className=" fixed w-full px-6 md:px-0 flex  justify-between md:justify-around z-50  items-center py-3 md:py-5  border-b " style={{background: mode ? "black" : "white"}}>
+      <div className=" sticky top-0 z-40 w-full px-6 md:px-0 flex  justify-between md:justify-around  items-center py-3 md:py-5  border-b " style={{background: mode ? "black" : "white"}}>
         <Link to="About" smooth={true} duration={100}>
           <img
             src={Icons.Logo}
