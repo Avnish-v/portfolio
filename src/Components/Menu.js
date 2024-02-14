@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import { useContextData } from '../Provider/Mode'
-import { Moon } from '../Assets/Svg'
+
 
 const Menu = () => {
-    const  {mode,  setMode} = useContextData();
+    const  {mode} = useContextData();
   return (
  <div className='absolute w-screen top-[65px] h-screen  overflow-y-hidden  z-50' style={{background : mode ? "black" : "white"}}>
  <ul
