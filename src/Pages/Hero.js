@@ -4,7 +4,7 @@ import { useContextData } from "../Provider/Mode";
 const Hero = () => {
   const mode = useContextData();
   return (
-    <div className="flex " id="About">
+    <div className="flex  pt-20" id="About">
       <div className="relative">
         <img
           src={Icons.Hero}
