@@ -3,17 +3,17 @@ import { Link } from 'react-scroll'
 import { useContextData } from '../Provider/Mode'
 
 
-const Menu = () => {
+const Menu = ({ham}) => {
     const  {mode} = useContextData();
   return (
- <div className='absolute w-screen top-[65px] h-screen  overflow-y-hidden  z-50' style={{background : mode ? "black" : "white"}}>
+ <div className='absolute w-screen top-[65px] h-screen    z-50' style={{background : mode ? "black" : "white"  , overflowY : ham ? "hidden" : "auto"}}>
  <ul
           className={`flex flex-col gap-10 items-center list-none cursor-pointer ${
             mode ? "text-white" : "text-black"
           } text-base font-semibold `}
         >
           <li className="hover:text-blue-800 mt-5">
-            <Link to="About" smooth={true} duration={100}>
+            <Link to="About"  smooth={true} duration={100}>
               About
             </Link>
           </li>
