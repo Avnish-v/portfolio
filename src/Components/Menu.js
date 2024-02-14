@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { useContextData } from '../Provider/Mode';
+import { Icons } from '../Assets';
 
 const Menu = ({  close }) => {
   const { mode } = useContextData();
@@ -49,6 +50,17 @@ const Menu = ({  close }) => {
           </ScrollLink>
         </li>
       </ul>
+      <div className='flex justify-center'>
+      <div
+            className=" h-9 mt-5 w-[200px] rounded-md  flex justify-center items-center"
+            style={{ background: "#5724E7" }}
+          >
+            <a href={Icons.Pdf} download="Resume.pdf">
+              <button className="text-white font-medium w-[100px]" onClick={close}>Resume</button>
+            </a>
+          </div>
+      </div>
+     
     </div>
   );
 };
