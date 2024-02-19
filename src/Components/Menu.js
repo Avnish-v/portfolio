@@ -24,7 +24,7 @@ const Menu = ({  close }) => {
   }
 
   return (
-    <div className={`fixed  w-screen top-[9%] h-screen    z-50`} style={{ background: mode ? 'black' : 'white' }}>
+    <div className={`fixed  w-screen top-[8%] h-screen    z-50`} style={{ background: mode ? 'black' : 'white' }}>
       <ul className={`flex flex-col gap-10 items-center list-none cursor-pointer ${mode ? 'text-white' : 'text-black'} text-base font-semibold `}>
         <li className="hover:text-blue-800 mt-5">
           <div onClick={(e) => handleClick(e, 'About')}>About</div>
